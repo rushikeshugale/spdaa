@@ -1,0 +1,11 @@
+avcoe@avcoe-HP-Compaq-Pro-4300-SFF-PC:~/bhrahmastra/sp/calculator$ lex calc.l
+avcoe@avcoe-HP-Compaq-Pro-4300-SFF-PC:~/bhrahmastra/sp/calculator$ yacc calc.y
+avcoe@avcoe-HP-Compaq-Pro-4300-SFF-PC:~/bhrahmastra/sp/calculator$ cc y.tab.c
+calc.y: In function ‘yyerror’:
+calc.y:40:1: warning: ' ' flag used with ‘%s’ gnu_printf format [-Wformat=]
+ printf ("% s \n", s);
+ ^
+avcoe@avcoe-HP-Compaq-Pro-4300-SFF-PC:~/bhrahmastra/sp/calculator$ ./a.out
+Enter the expression: 5-4
+Answer: 1 
+
